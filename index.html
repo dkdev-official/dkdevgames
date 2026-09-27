@@ -6,6 +6,11 @@
 <title>DK.DEV.GAMES — Free Games. Premium Experience.</title>
 <meta name="description" content="Download handcrafted games by DK. Free, safe, and always updated.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+
+<!-- ==================== ADSTERRA POPUNDER ==================== -->
+<script src="https://pl31530319.profitableratecpmnetwork.com/2e/be/33/2ebe337a068fb522dc012ef681afca05.js"></script>
+<!-- =========================================================== -->
+
 <style>
   :root {
     --bg: #08080d;
@@ -53,7 +58,6 @@
     pointer-events: none;
   }
 
-  /* ===== HEADER ===== */
   header {
     position: sticky;
     top: 0;
@@ -97,6 +101,7 @@
     box-shadow: 0 6px 20px var(--glow);
     position: relative;
   }
+
   .logo-icon::after {
     content: '';
     position: absolute;
@@ -136,7 +141,9 @@
     transition: all 0.25s;
     font-family: inherit;
   }
+
   .search-input::placeholder { color: var(--text-mute); }
+
   .search-input:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 4px var(--glow);
@@ -145,14 +152,19 @@
 
   .search-icon {
     position: absolute;
-    left: 15px; top: 50%;
+    left: 15px;
+    top: 50%;
     transform: translateY(-50%);
     color: var(--text-mute);
     pointer-events: none;
     display: flex;
   }
 
-  .nav-links { display: flex; gap: 4px; flex-shrink: 0; }
+  .nav-links {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
 
   .nav-link {
     color: var(--text-dim);
@@ -164,10 +176,17 @@
     transition: all 0.2s;
     white-space: nowrap;
   }
-  .nav-link:hover { color: var(--text); background: var(--bg-3); }
-  .nav-link.active { color: var(--accent-2); background: rgba(99,102,241,0.12); }
 
-  /* ===== HERO ===== */
+  .nav-link:hover {
+    color: var(--text);
+    background: var(--bg-3);
+  }
+
+  .nav-link.active {
+    color: var(--accent-2);
+    background: rgba(99,102,241,0.12);
+  }
+
   .hero {
     max-width: 1400px;
     margin: 0 auto;
@@ -191,6 +210,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+
   .hero-badge::before {
     content: '★';
     font-size: 10px;
@@ -204,12 +224,14 @@
     margin-bottom: 18px;
     line-height: 1.05;
   }
+
   .hero h1 span {
     background: var(--grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
   .hero h1 em {
     font-style: normal;
     background: var(--grad-gold);
@@ -240,12 +262,12 @@
     transition: all 0.25s;
     letter-spacing: 0.3px;
   }
+
   .hero-cta:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px var(--glow);
   }
 
-  /* Stats */
   .stats {
     max-width: 1000px;
     margin: 60px auto 0;
@@ -263,6 +285,7 @@
     text-align: center;
     transition: all 0.25s;
   }
+
   .stat:hover {
     border-color: var(--border-2);
     transform: translateY(-3px);
@@ -279,6 +302,7 @@
     letter-spacing: -0.5px;
     line-height: 1.2;
   }
+
   .stat-value.gold {
     background: var(--grad-gold);
     -webkit-background-clip: text;
@@ -295,7 +319,6 @@
     margin-top: 6px;
   }
 
-  /* ===== SECTIONS ===== */
   section { position: relative; }
 
   .section-inner {
@@ -333,8 +356,9 @@
     margin: 0 auto;
   }
 
-  /* ===== GAMES ===== */
-  .games-section .section-inner { padding-top: 20px; }
+  .games-section .section-inner {
+    padding-top: 20px;
+  }
 
   .games-head-row {
     display: flex;
@@ -352,6 +376,7 @@
     align-items: center;
     gap: 10px;
   }
+
   .games-head-title::before {
     content: '';
     width: 4px;
@@ -407,7 +432,10 @@
     transform: translateY(-8px);
     box-shadow: 0 24px 60px rgba(0,0,0,0.55), 0 0 40px var(--glow);
   }
-  .game-card:hover::before { opacity: 1; }
+
+  .game-card:hover::before {
+    opacity: 1;
+  }
 
   .thumb-wrap {
     position: relative;
@@ -417,12 +445,16 @@
   }
 
   .game-thumb {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.5s;
     display: block;
   }
-  .game-card:hover .game-thumb { transform: scale(1.1); }
+
+  .game-card:hover .game-thumb {
+    transform: scale(1.1);
+  }
 
   .thumb-gradient {
     position: absolute;
@@ -433,7 +465,8 @@
 
   .badge-free {
     position: absolute;
-    top: 12px; left: 12px;
+    top: 12px;
+    left: 12px;
     background: var(--grad-gold);
     color: #1a1200;
     font-size: 10px;
@@ -447,7 +480,8 @@
 
   .badge-hot {
     position: absolute;
-    top: 12px; right: 12px;
+    top: 12px;
+    right: 12px;
     background: rgba(239,68,68,0.9);
     color: #fff;
     font-size: 10px;
@@ -528,20 +562,31 @@
     overflow: hidden;
     text-transform: uppercase;
   }
+
   .btn-download::before {
     content: '';
     position: absolute;
-    top: 0; left: -100%;
-    width: 100%; height: 100%;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
     transition: left 0.6s;
   }
-  .btn-download:hover::before { left: 100%; }
+
+  .btn-download:hover::before {
+    left: 100%;
+  }
+
   .btn-download:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 28px var(--glow);
   }
-  .btn-download svg { width: 15px; height: 15px; }
+
+  .btn-download svg {
+    width: 15px;
+    height: 15px;
+  }
 
   .btn-mirror {
     display: block;
@@ -560,31 +605,42 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
+
   .btn-mirror:hover {
     color: var(--text);
     border-color: var(--accent);
     background: rgba(99,102,241,0.08);
   }
 
-  .loading, .empty {
+  .loading,
+  .empty {
     text-align: center;
     color: var(--text-dim);
     padding: 80px 20px;
     font-size: 14px;
     grid-column: 1 / -1;
   }
+
   .spinner {
-    width: 38px; height: 38px;
+    width: 38px;
+    height: 38px;
     border: 3px solid var(--border);
     border-top-color: var(--accent);
     border-radius: 50%;
     margin: 0 auto 16px;
     animation: spin 0.8s linear infinite;
   }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .empty-icon { font-size: 52px; margin-bottom: 14px; opacity: 0.4; }
 
-  /* ===== FEATURES ===== */
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .empty-icon {
+    font-size: 52px;
+    margin-bottom: 14px;
+    opacity: 0.4;
+  }
+
   .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -602,24 +658,32 @@
     position: relative;
     overflow: hidden;
   }
+
   .feature::after {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 3px;
     background: var(--grad);
     opacity: 0;
     transition: opacity 0.3s;
   }
+
   .feature:hover {
     border-color: var(--border-2);
     transform: translateY(-4px);
     background: var(--bg-3);
   }
-  .feature:hover::after { opacity: 1; }
+
+  .feature:hover::after {
+    opacity: 1;
+  }
 
   .feature-icon {
-    width: 48px; height: 48px;
+    width: 48px;
+    height: 48px;
     background: rgba(99,102,241,0.12);
     border: 1px solid rgba(99,102,241,0.25);
     border-radius: 12px;
@@ -629,7 +693,11 @@
     margin-bottom: 16px;
     color: var(--accent-2);
   }
-  .feature-icon svg { width: 22px; height: 22px; }
+
+  .feature-icon svg {
+    width: 22px;
+    height: 22px;
+  }
 
   .feature-title {
     font-size: 15px;
@@ -637,13 +705,13 @@
     margin-bottom: 8px;
     color: #fff;
   }
+
   .feature-desc {
     font-size: 13px;
     color: var(--text-dim);
     line-height: 1.6;
   }
 
-  /* ===== ABOUT ===== */
   .about-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -682,6 +750,7 @@
     z-index: 1;
     animation: float 4s ease-in-out infinite;
   }
+
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
@@ -694,12 +763,14 @@
     margin-bottom: 16px;
     line-height: 1.15;
   }
+
   .about-content h2 span {
     background: var(--grad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
   .about-content p {
     color: var(--text-dim);
     font-size: 14px;
@@ -711,6 +782,7 @@
     list-style: none;
     margin-top: 22px;
   }
+
   .about-list li {
     display: flex;
     align-items: flex-start;
@@ -720,17 +792,18 @@
     color: var(--text);
     font-weight: 500;
   }
+
   .about-list svg {
     color: var(--green);
     flex-shrink: 0;
     margin-top: 3px;
   }
 
-  /* ===== FAQ ===== */
   .faq-wrap {
     max-width: 780px;
     margin: 0 auto;
   }
+
   .faq-item {
     background: var(--bg-2);
     border: 1px solid var(--border);
@@ -739,7 +812,10 @@
     overflow: hidden;
     transition: border-color 0.25s;
   }
-  .faq-item:hover { border-color: var(--border-2); }
+
+  .faq-item:hover {
+    border-color: var(--border-2);
+  }
 
   .faq-q {
     padding: 20px 22px;
@@ -754,7 +830,10 @@
     user-select: none;
     list-style: none;
   }
-  .faq-q::-webkit-details-marker { display: none; }
+
+  .faq-q::-webkit-details-marker {
+    display: none;
+  }
 
   .faq-q::after {
     content: '+';
@@ -765,7 +844,10 @@
     flex-shrink: 0;
     line-height: 1;
   }
-  details[open] .faq-q::after { transform: rotate(45deg); }
+
+  details[open] .faq-q::after {
+    transform: rotate(45deg);
+  }
 
   .faq-a {
     padding: 0 22px 20px;
@@ -774,12 +856,18 @@
     line-height: 1.7;
     animation: fadeIn 0.3s ease;
   }
+
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-6px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  /* ===== FOOTER ===== */
   footer {
     border-top: 1px solid var(--border);
     background: var(--bg-2);
@@ -799,6 +887,7 @@
     margin-bottom: 14px;
     font-size: 17px;
   }
+
   .footer-brand-col p {
     color: var(--text-dim);
     font-size: 13px;
@@ -814,15 +903,25 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  .footer-col ul { list-style: none; }
-  .footer-col li { margin-bottom: 10px; }
+
+  .footer-col ul {
+    list-style: none;
+  }
+
+  .footer-col li {
+    margin-bottom: 10px;
+  }
+
   .footer-col a {
     color: var(--text-dim);
     text-decoration: none;
     font-size: 13px;
     transition: color 0.2s;
   }
-  .footer-col a:hover { color: var(--accent-2); }
+
+  .footer-col a:hover {
+    color: var(--accent-2);
+  }
 
   .footer-bottom {
     max-width: 1400px;
@@ -834,11 +933,12 @@
     font-size: 12px;
   }
 
-  /* ===== MOBILE NAV ===== */
   .mobile-nav {
     display: none;
     position: fixed;
-    bottom: 0; left: 0; right: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: rgba(14, 15, 23, 0.95);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
@@ -846,12 +946,14 @@
     padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
     z-index: 100;
   }
+
   .mobile-nav-inner {
     display: flex;
     justify-content: space-around;
     max-width: 500px;
     margin: 0 auto;
   }
+
   .mobile-nav-item {
     display: flex;
     flex-direction: column;
@@ -865,10 +967,16 @@
     border-radius: 10px;
     transition: all 0.2s;
   }
-  .mobile-nav-item.active { color: var(--accent-2); }
-  .mobile-nav-item svg { width: 20px; height: 20px; }
 
-  /* ===== RESPONSIVE ===== */
+  .mobile-nav-item.active {
+    color: var(--accent-2);
+  }
+
+  .mobile-nav-item svg {
+    width: 20px;
+    height: 20px;
+  }
+
   @media (max-width: 900px) {
     .nav-links { display: none; }
     .logo-text { display: none; }
@@ -880,30 +988,94 @@
   }
 
   @media (max-width: 600px) {
-    .header-inner { padding: 12px 16px; gap: 10px; }
-    .search-wrap { max-width: none; }
-    .search-input { font-size: 13px; padding: 10px 16px 10px 40px; }
-    .logo-icon { width: 34px; height: 34px; font-size: 18px; }
-    .hero { padding: 36px 16px 30px; }
-    .hero p { font-size: 14px; margin-bottom: 26px; }
-    .hero-cta { padding: 13px 26px; font-size: 13px; }
-    .section-inner { padding: 44px 16px; }
-    .games-grid { grid-template-columns: 1fr; gap: 16px; }
-    .mobile-nav { display: block; }
-    .game-info { padding: 16px; }
-    .footer-inner { grid-template-columns: 1fr; gap: 26px; padding: 0 16px; }
-    footer { padding: 40px 0 100px; }
-    .stats { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 0 16px; }
-    .stat { padding: 18px 10px; }
-    .stat-value { font-size: 22px; }
-    .about-visual-icon { font-size: 90px; }
+    .header-inner {
+      padding: 12px 16px;
+      gap: 10px;
+    }
+
+    .search-wrap {
+      max-width: none;
+    }
+
+    .search-input {
+      font-size: 13px;
+      padding: 10px 16px 10px 40px;
+    }
+
+    .logo-icon {
+      width: 34px;
+      height: 34px;
+      font-size: 18px;
+    }
+
+    .hero {
+      padding: 36px 16px 30px;
+    }
+
+    .hero p {
+      font-size: 14px;
+      margin-bottom: 26px;
+    }
+
+    .hero-cta {
+      padding: 13px 26px;
+      font-size: 13px;
+    }
+
+    .section-inner {
+      padding: 44px 16px;
+    }
+
+    .games-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .mobile-nav {
+      display: block;
+    }
+
+    .game-info {
+      padding: 16px;
+    }
+
+    .footer-inner {
+      grid-template-columns: 1fr;
+      gap: 26px;
+      padding: 0 16px;
+    }
+
+    footer {
+      padding: 40px 0 100px;
+    }
+
+    .stats {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 0 16px;
+    }
+
+    .stat {
+      padding: 18px 10px;
+    }
+
+    .stat-value {
+      font-size: 22px;
+    }
+
+    .about-visual-icon {
+      font-size: 90px;
+    }
   }
 
   @media (min-width: 1200px) {
-    .games-grid { grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); }
+    .games-grid {
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    }
   }
 </style>
 </head>
+
 <body>
 
 <!-- HEADER -->
@@ -917,10 +1089,17 @@
     <div class="search-wrap">
       <span class="search-icon">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          <circle cx="11" cy="11" r="8"/>
+          <path d="m21 21-4.35-4.35"/>
         </svg>
       </span>
-      <input type="text" id="searchInput" class="search-input" placeholder="Search games...">
+
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Search games..."
+      >
     </div>
 
     <nav class="nav-links">
@@ -934,10 +1113,20 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-badge">Premium Game Collection</div>
-  <h1>Discover. Play. <em>Enjoy.</em></h1>
-  <p>Handcrafted games made with love. Safe downloads, no hidden costs, no nonsense — just pure gaming joy.</p>
+
+  <h1>
+    Discover. Play. <em>Enjoy.</em>
+  </h1>
+
+  <p>
+    Handcrafted games made with love. Safe downloads, no hidden costs,
+    no nonsense — just pure gaming joy.
+  </p>
+
   <a href="#games" class="hero-cta">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="3"
+         stroke-linecap="round" stroke-linejoin="round">
       <polygon points="6 3 20 12 6 21 6 3"/>
     </svg>
     EXPLORE GAMES
@@ -949,14 +1138,17 @@
       <div class="stat-value" id="statGames">—</div>
       <div class="stat-label">Games</div>
     </div>
+
     <div class="stat">
       <div class="stat-value gold">100%</div>
       <div class="stat-label">Free</div>
     </div>
+
     <div class="stat">
       <div class="stat-value">∞</div>
       <div class="stat-label">Playtime</div>
     </div>
+
     <div class="stat">
       <div class="stat-value gold">★ 5.0</div>
       <div class="stat-label">Rating</div>
@@ -967,60 +1159,104 @@
 <!-- GAMES -->
 <section class="games-section" id="games">
   <div class="section-inner">
+
     <div class="games-head-row">
       <div class="games-head-title">All Games</div>
       <div class="game-count" id="gameCount">0 games</div>
     </div>
+
     <div class="games-grid" id="gamesGrid">
       <div class="loading">
         <div class="spinner"></div>
         Loading games...
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- FEATURES -->
 <section id="features">
   <div class="section-inner">
+
     <div class="section-head">
       <div class="section-label">Why Choose Us</div>
       <h2 class="section-title">Built for Players</h2>
-      <p class="section-sub">Everything you need for a smooth gaming experience — no compromises.</p>
+      <p class="section-sub">
+        Everything you need for a smooth gaming experience — no compromises.
+      </p>
     </div>
 
     <div class="features-grid">
+
       <div class="feature">
         <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
         </div>
+
         <div class="feature-title">100% Safe & Verified</div>
-        <div class="feature-desc">Every game is scanned and verified. No malware, no viruses, no hidden traps.</div>
+
+        <div class="feature-desc">
+          Every game is scanned and verified. No malware, no viruses,
+          no hidden traps.
+        </div>
       </div>
 
       <div class="feature">
         <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
         </div>
+
         <div class="feature-title">Instant Downloads</div>
-        <div class="feature-desc">Direct download links. No waiting, no surveys, no fake buttons.</div>
+
+        <div class="feature-desc">
+          Direct download links. No waiting, no surveys, no fake buttons.
+        </div>
       </div>
 
       <div class="feature">
         <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
         </div>
+
         <div class="feature-title">Always Updated</div>
-        <div class="feature-desc">Games get regular updates, new content, and bug fixes. Forever.</div>
+
+        <div class="feature-desc">
+          Games get regular updates, new content, and bug fixes. Forever.
+        </div>
       </div>
 
       <div class="feature">
         <div class="feature-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
         </div>
+
         <div class="feature-title">Indie Crafted</div>
-        <div class="feature-desc">Made by an indie dev, for real players. Every game has soul.</div>
+
+        <div class="feature-desc">
+          Made by an indie dev, for real players. Every game has soul.
+        </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -1028,29 +1264,63 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="section-inner">
+
     <div class="about-wrap">
+
       <div class="about-visual">
         <div class="about-visual-icon">🕹️</div>
       </div>
+
       <div class="about-content">
+
         <div class="section-label">Our Story</div>
-        <h2>Games made with <span>passion</span>, not profit.</h2>
-        <p>DK.DEV.GAMES is an independent game studio focused on creating cozy, fun, and memorable experiences. We believe great games shouldn't cost a fortune or come with hidden catches.</p>
-        <p>Every title here is crafted with care, tested thoroughly, and released completely free. Because gaming should be for everyone.</p>
+
+        <h2>
+          Games made with <span>passion</span>, not profit.
+        </h2>
+
+        <p>
+          DK.DEV.GAMES is an independent game studio focused on creating
+          cozy, fun, and memorable experiences. We believe great games
+          shouldn't cost a fortune or come with hidden catches.
+        </p>
+
+        <p>
+          Every title here is crafted with care, tested thoroughly,
+          and released completely free. Because gaming should be for everyone.
+        </p>
+
         <ul class="about-list">
+
           <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="3"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
             No ads on download pages
           </li>
+
           <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="3"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
             No registration required
           </li>
+
           <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="3"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
             No paywalls, no premium tiers
           </li>
+
         </ul>
+
       </div>
     </div>
   </div>
@@ -1059,50 +1329,79 @@
 <!-- FAQ -->
 <section id="faq">
   <div class="section-inner">
+
     <div class="section-head">
       <div class="section-label">Questions</div>
       <h2 class="section-title">Frequently Asked</h2>
-      <p class="section-sub">Everything you want to know, answered.</p>
+      <p class="section-sub">
+        Everything you want to know, answered.
+      </p>
     </div>
 
     <div class="faq-wrap">
+
       <details class="faq-item">
         <summary class="faq-q">Are the games really free?</summary>
-        <div class="faq-a">Yes, absolutely. Every game on this site is 100% free to download and play. No hidden charges, no subscriptions, no premium tiers.</div>
+        <div class="faq-a">
+          Yes, absolutely. Every game on this site is 100% free to download
+          and play. No hidden charges, no subscriptions, no premium tiers.
+        </div>
       </details>
 
       <details class="faq-item">
         <summary class="faq-q">Are the downloads safe?</summary>
-        <div class="faq-a">Every game is tested and verified before being added here. We don't use sketchy file hosts or bundled software. Your safety is our priority.</div>
+        <div class="faq-a">
+          Every game is tested and verified before being added here.
+          We don't use sketchy file hosts or bundled software.
+          Your safety is our priority.
+        </div>
       </details>
 
       <details class="faq-item">
         <summary class="faq-q">Do I need to create an account?</summary>
-        <div class="faq-a">No. Just click download and play. We don't require registration, email, or any personal information.</div>
+        <div class="faq-a">
+          No. Just click download and play. We don't require registration,
+          email, or any personal information.
+        </div>
       </details>
 
       <details class="faq-item">
         <summary class="faq-q">What platforms are supported?</summary>
-        <div class="faq-a">Most games are available for PC (Windows). Mobile/Android versions are being worked on and will be released soon.</div>
+        <div class="faq-a">
+          Most games are available for PC (Windows). Mobile/Android versions
+          are being worked on and will be released soon.
+        </div>
       </details>
 
       <details class="faq-item">
         <summary class="faq-q">How often do you add new games?</summary>
-        <div class="faq-a">We're actively developing new games. Follow us on social media to stay updated on new releases and updates.</div>
+        <div class="faq-a">
+          We're actively developing new games. Follow us on social media
+          to stay updated on new releases and updates.
+        </div>
       </details>
+
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
+
   <div class="footer-inner">
+
     <div class="footer-brand-col">
+
       <a href="#" class="logo">
         <div class="logo-icon">🎮</div>
         <span class="logo-text">DK.DEV.GAMES</span>
       </a>
-      <p>Independent game studio creating cozy, fun experiences for players around the world. Free forever.</p>
+
+      <p>
+        Independent game studio creating cozy, fun experiences
+        for players around the world. Free forever.
+      </p>
+
     </div>
 
     <div class="footer-col">
@@ -1132,134 +1431,253 @@
         <li><a href="#">Disclaimer</a></li>
       </ul>
     </div>
+
   </div>
 
   <div class="footer-bottom">
-    © <span id="year"></span> DK.DEV.GAMES — All rights reserved. Crafted with ❤️ by an indie dev.
+    © <span id="year"></span> DK.DEV.GAMES —
+    All rights reserved. Crafted with ❤️ by an indie dev.
   </div>
+
 </footer>
 
 <!-- MOBILE NAV -->
 <nav class="mobile-nav">
+
   <div class="mobile-nav-inner">
+
     <a href="#" class="mobile-nav-item active">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
       Home
     </a>
+
     <a href="#games" class="mobile-nav-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="6" width="20" height="12" rx="2"/>
+        <path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/>
+      </svg>
       Games
     </a>
+
     <a href="#about" class="mobile-nav-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 16v-4M12 8h.01"/>
+      </svg>
       About
     </a>
+
     <a href="#faq" class="mobile-nav-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>
+      </svg>
       FAQ
     </a>
+
   </div>
 </nav>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+
+  document.getElementById('year').textContent =
+    new Date().getFullYear();
 
   let allGames = [];
+
   const grid = document.getElementById('gamesGrid');
   const countEl = document.getElementById('gameCount');
   const statGames = document.getElementById('statGames');
   const searchInput = document.getElementById('searchInput');
 
   function renderGames(list) {
+
     grid.innerHTML = '';
 
     if (!list || list.length === 0) {
+
       grid.innerHTML = `
         <div class="empty">
           <div class="empty-icon">🎮</div>
           <div>No games found</div>
         </div>`;
+
       countEl.textContent = '0 games';
+
       return;
     }
 
-    countEl.textContent = list.length + ' game' + (list.length > 1 ? 's' : '');
+    countEl.textContent =
+      list.length + ' game' +
+      (list.length > 1 ? 's' : '');
 
     list.forEach(game => {
+
       const card = document.createElement('div');
+
       card.className = 'game-card';
 
       const tagsHTML = (game.tags || [])
-        .map(t => `<span class="tag">${t}</span>`).join('');
+        .map(t => `<span class="tag">${t}</span>`)
+        .join('');
 
       const mirrorHTML = game.mirrorLink
         ? `<a href="${game.mirrorLink}" target="_blank" rel="noopener" class="btn-mirror">Mirror Download</a>`
         : '';
 
-      const fallbackImg = `https://via.placeholder.com/600x400/161824/6366f1?text=${encodeURIComponent(game.title)}`;
+      const fallbackImg =
+        `https://via.placeholder.com/600x400/161824/6366f1?text=${encodeURIComponent(game.title)}`;
 
       card.innerHTML = `
+
         <div class="thumb-wrap">
-          <img src="${game.image || fallbackImg}" alt="${game.title}"
-               class="game-thumb"
-               onerror="this.onerror=null;this.src='${fallbackImg}'">
+
+          <img
+            src="${game.image || fallbackImg}"
+            alt="${game.title}"
+            class="game-thumb"
+            onerror="this.onerror=null;this.src='${fallbackImg}'"
+          >
+
           <div class="thumb-gradient"></div>
+
           <span class="badge-free">FREE</span>
           <span class="badge-hot">NEW</span>
+
         </div>
+
         <div class="game-info">
-          <div class="game-title">${game.title}</div>
-          <div class="game-desc">${game.description}</div>
-          <div class="game-tags">${tagsHTML}</div>
-          <a href="${game.itchLink}" target="_blank" rel="noopener" class="btn-download">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+          <div class="game-title">
+            ${game.title}
+          </div>
+
+          <div class="game-desc">
+            ${game.description}
+          </div>
+
+          <div class="game-tags">
+            ${tagsHTML}
+          </div>
+
+          <a
+            href="${game.itchLink}"
+            target="_blank"
+            rel="noopener"
+            class="btn-download"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
+
             Download Now
+
           </a>
+
           ${mirrorHTML}
+
         </div>
       `;
 
       grid.appendChild(card);
+
     });
   }
 
   fetch('games.json?v=' + Date.now())
+
     .then(res => res.json())
+
     .then(data => {
+
       allGames = data.games || [];
+
       renderGames(allGames);
-      statGames.textContent = allGames.length + '+';
+
+      statGames.textContent =
+        allGames.length + '+';
+
     })
+
     .catch(err => {
+
       console.error(err);
+
       grid.innerHTML = `
         <div class="empty">
           <div class="empty-icon">⚠️</div>
           <div>Failed to load games</div>
         </div>`;
+
     });
 
   searchInput.addEventListener('input', (e) => {
-    const q = e.target.value.toLowerCase().trim();
-    if (!q) { renderGames(allGames); return; }
+
+    const q =
+      e.target.value.toLowerCase().trim();
+
+    if (!q) {
+
+      renderGames(allGames);
+
+      return;
+    }
+
     const filtered = allGames.filter(g =>
+
       g.title.toLowerCase().includes(q) ||
-      (g.description || '').toLowerCase().includes(q) ||
-      (g.tags || []).some(t => t.toLowerCase().includes(q))
+
+      (g.description || '')
+        .toLowerCase()
+        .includes(q) ||
+
+      (g.tags || [])
+        .some(t =>
+          t.toLowerCase().includes(q)
+        )
+
     );
+
     renderGames(filtered);
+
   });
 
   document.addEventListener('keydown', (e) => {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+
+    if (
+      (e.ctrlKey || e.metaKey) &&
+      e.key === 'k'
+    ) {
+
       e.preventDefault();
+
       searchInput.focus();
+
     }
+
   });
+
 </script>
 
 </body>
