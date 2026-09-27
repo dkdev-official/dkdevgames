@@ -23,6 +23,14 @@
       "tags": ["Racing", "Driving", "3D", "Simulation", "PC"],
       "itchLink": "https://box-deginer.itch.io/cargoods",
       "mirrorLink": ""
+    },
+    {
+      "title": "Jetpack Rush",
+      "description": "Fly high. Dodge fast. Survive longer. 🚀 Hold SPACE to fly, release to fall. Dodge spikes and hazards while collecting coins. Simple controls, addictive gameplay — easy to learn, hard to master.",
+      "image": "https://img.sanishtech.com/u/265a2190d37158630cf8fba499fe5659.jpg",
+      "tags": ["Arcade", "Endless", "Runner", "Casual", "PC"],
+      "itchLink": "https://box-deginer.itch.io/jetpack-rush",
+      "mirrorLink": ""
     }
   ]
 }
