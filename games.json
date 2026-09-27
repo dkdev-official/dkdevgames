@@ -3,9 +3,17 @@
     {
       "title": "Tiny Village",
       "description": "Tiny Village is a cozy pixel-art farming and village-building game. Start with one small house, explore a large world, collect resources, farm, fish, mine, buy and sell items, earn money, and slowly build your own growing village. 🌱🏡",
-      "image": "https://drive.google.com/file/d/1UDFGzxvD7EPwSxk1dWcV6mPTGCgJ0z8W/view?usp=sharing",
-      "tags": ["Farming", "Pixel Art", "Building", "Cozy"],
+      "image": "https://drive.google.com/uc?export=view&id=1UDFGzxvD7EPwSxk1dWcV6mPTGCgJ0z8W",
+      "tags": ["Farming", "Pixel Art", "Building", "Cozy", "PC"],
       "itchLink": "https://box-deginer.itch.io/tiny-village",
+      "mirrorLink": ""
+    },
+    {
+      "title": "Fruit Merge",
+      "description": "Drop, merge, and grow the ultimate watermelon! 🍉 A cozy physics puzzle game where you drop colorful fruits and merge same ones into bigger fruits. Simple, satisfying, and addictive — easy to learn, hard to master.",
+      "image": "https://img.sanishtech.com/u/950622228f9d7e71532e7f300baee6f5.png",
+      "tags": ["Puzzle", "Casual", "Physics", "PC"],
+      "itchLink": "https://box-deginer.itch.io/fruit-merge",
       "mirrorLink": ""
     }
   ]
