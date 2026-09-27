@@ -33,8 +33,15 @@
     --glow: rgba(99, 102, 241, 0.35);
   }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
@@ -142,7 +149,9 @@
     font-family: inherit;
   }
 
-  .search-input::placeholder { color: var(--text-mute); }
+  .search-input::placeholder {
+    color: var(--text-mute);
+  }
 
   .search-input:focus {
     border-color: var(--accent);
@@ -319,7 +328,9 @@
     margin-top: 6px;
   }
 
-  section { position: relative; }
+  section {
+    position: relative;
+  }
 
   .section-inner {
     max-width: 1400px;
@@ -632,7 +643,9 @@
   }
 
   @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .empty-icon {
@@ -752,8 +765,13 @@
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
+    0%, 100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-12px);
+    }
   }
 
   .about-content h2 {
@@ -862,6 +880,7 @@
       opacity: 0;
       transform: translateY(-6px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -977,14 +996,73 @@
     height: 20px;
   }
 
+  /* ==================== AD POSITIONS ==================== */
+
+  .ad-container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 90px;
+    margin: 10px auto 30px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .ad-label {
+    color: var(--text-mute);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 600px) {
+    .ad-container {
+      min-height: 70px;
+      padding: 8px 10px;
+      margin: 5px auto 20px;
+    }
+  }
+
+  /* ==================== END AD POSITIONS ==================== */
+
   @media (max-width: 900px) {
-    .nav-links { display: none; }
-    .logo-text { display: none; }
-    .hero { padding: 50px 20px 40px; }
-    .stats { grid-template-columns: repeat(2, 1fr); margin-top: 40px; }
-    .footer-inner { grid-template-columns: 1fr 1fr; gap: 30px; }
-    .about-wrap { grid-template-columns: 1fr; gap: 30px; }
-    .about-visual { max-width: 320px; margin: 0 auto; }
+    .nav-links {
+      display: none;
+    }
+
+    .logo-text {
+      display: none;
+    }
+
+    .hero {
+      padding: 50px 20px 40px;
+    }
+
+    .stats {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 40px;
+    }
+
+    .footer-inner {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .about-wrap {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .about-visual {
+      max-width: 320px;
+      margin: 0 auto;
+    }
   }
 
   @media (max-width: 600px) {
@@ -1081,14 +1159,18 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
+
     <a href="#" class="logo">
       <div class="logo-icon">🎮</div>
       <span class="logo-text">DK.DEV.GAMES</span>
     </a>
 
     <div class="search-wrap">
+
       <span class="search-icon">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round">
           <circle cx="11" cy="11" r="8"/>
           <path d="m21 21-4.35-4.35"/>
         </svg>
@@ -1100,6 +1182,7 @@
         class="search-input"
         placeholder="Search games..."
       >
+
     </div>
 
     <nav class="nav-links">
@@ -1107,12 +1190,17 @@
       <a href="#about" class="nav-link">About</a>
       <a href="#faq" class="nav-link">FAQ</a>
     </nav>
+
   </div>
 </header>
 
+
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">Premium Game Collection</div>
+
+  <div class="hero-badge">
+    Premium Game Collection
+  </div>
 
   <h1>
     Discover. Play. <em>Enjoy.</em>
@@ -1124,16 +1212,21 @@
   </p>
 
   <a href="#games" class="hero-cta">
+
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
          stroke="currentColor" stroke-width="3"
          stroke-linecap="round" stroke-linejoin="round">
       <polygon points="6 3 20 12 6 21 6 3"/>
     </svg>
+
     EXPLORE GAMES
+
   </a>
+
 
   <!-- STATS -->
   <div class="stats">
+
     <div class="stat">
       <div class="stat-value" id="statGames">—</div>
       <div class="stat-label">Games</div>
@@ -1153,127 +1246,229 @@
       <div class="stat-value gold">★ 5.0</div>
       <div class="stat-label">Rating</div>
     </div>
+
   </div>
+
 </section>
+
+
+<!-- ==================== AD POSITION 1 ==================== -->
+<div class="ad-container">
+
+  <div class="ad-label">
+    Advertisement
+  </div>
+
+  <script src="https://pl31530319.profitableratecpmnetwork.com/2e/be/33/2ebe337a068fb522dc012ef681afca05.js"></script>
+
+</div>
+<!-- ==================== END AD POSITION 1 ==================== -->
+
 
 <!-- GAMES -->
 <section class="games-section" id="games">
+
   <div class="section-inner">
 
     <div class="games-head-row">
-      <div class="games-head-title">All Games</div>
-      <div class="game-count" id="gameCount">0 games</div>
+
+      <div class="games-head-title">
+        All Games
+      </div>
+
+      <div class="game-count" id="gameCount">
+        0 games
+      </div>
+
     </div>
 
     <div class="games-grid" id="gamesGrid">
+
       <div class="loading">
+
         <div class="spinner"></div>
+
         Loading games...
+
       </div>
+
     </div>
 
   </div>
+
 </section>
+
+
+<!-- ==================== AD POSITION 2 ==================== -->
+<div class="ad-container">
+
+  <div class="ad-label">
+    Advertisement
+  </div>
+
+  <script src="https://pl31530319.profitableratecpmnetwork.com/2e/be/33/2ebe337a068fb522dc012ef681afca05.js"></script>
+
+</div>
+<!-- ==================== END AD POSITION 2 ==================== -->
+
 
 <!-- FEATURES -->
 <section id="features">
+
   <div class="section-inner">
 
     <div class="section-head">
-      <div class="section-label">Why Choose Us</div>
-      <h2 class="section-title">Built for Players</h2>
+
+      <div class="section-label">
+        Why Choose Us
+      </div>
+
+      <h2 class="section-title">
+        Built for Players
+      </h2>
+
       <p class="section-sub">
         Everything you need for a smooth gaming experience — no compromises.
       </p>
+
     </div>
+
 
     <div class="features-grid">
 
+
       <div class="feature">
+
         <div class="feature-icon">
+
           <svg viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2.2"
                stroke-linecap="round" stroke-linejoin="round">
+
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             <path d="m9 12 2 2 4-4"/>
+
           </svg>
+
         </div>
 
-        <div class="feature-title">100% Safe & Verified</div>
+        <div class="feature-title">
+          100% Safe & Verified
+        </div>
 
         <div class="feature-desc">
           Every game is scanned and verified. No malware, no viruses,
           no hidden traps.
         </div>
+
       </div>
 
+
       <div class="feature">
+
         <div class="feature-icon">
+
           <svg viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2.2"
                stroke-linecap="round" stroke-linejoin="round">
+
             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+
           </svg>
+
         </div>
 
-        <div class="feature-title">Instant Downloads</div>
+        <div class="feature-title">
+          Instant Downloads
+        </div>
 
         <div class="feature-desc">
           Direct download links. No waiting, no surveys, no fake buttons.
         </div>
+
       </div>
 
+
       <div class="feature">
+
         <div class="feature-icon">
+
           <svg viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2.2"
                stroke-linecap="round" stroke-linejoin="round">
+
             <circle cx="12" cy="12" r="10"/>
             <path d="M12 6v6l4 2"/>
+
           </svg>
+
         </div>
 
-        <div class="feature-title">Always Updated</div>
+        <div class="feature-title">
+          Always Updated
+        </div>
 
         <div class="feature-desc">
           Games get regular updates, new content, and bug fixes. Forever.
         </div>
+
       </div>
 
+
       <div class="feature">
+
         <div class="feature-icon">
+
           <svg viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2.2"
                stroke-linecap="round" stroke-linejoin="round">
+
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
             <circle cx="12" cy="7" r="4"/>
+
           </svg>
+
         </div>
 
-        <div class="feature-title">Indie Crafted</div>
+        <div class="feature-title">
+          Indie Crafted
+        </div>
 
         <div class="feature-desc">
           Made by an indie dev, for real players. Every game has soul.
         </div>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
+
 
 <!-- ABOUT -->
 <section id="about">
+
   <div class="section-inner">
 
     <div class="about-wrap">
 
+
       <div class="about-visual">
-        <div class="about-visual-icon">🕹️</div>
+
+        <div class="about-visual-icon">
+          🕹️
+        </div>
+
       </div>
+
 
       <div class="about-content">
 
-        <div class="section-label">Our Story</div>
+        <div class="section-label">
+          Our Story
+        </div>
 
         <h2>
           Games made with <span>passion</span>, not profit.
@@ -1290,111 +1485,184 @@
           and released completely free. Because gaming should be for everyone.
         </p>
 
+
         <ul class="about-list">
 
           <li>
+
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="3"
                  stroke-linecap="round" stroke-linejoin="round">
+
               <path d="M20 6 9 17l-5-5"/>
+
             </svg>
+
             No ads on download pages
+
           </li>
 
+
           <li>
+
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="3"
                  stroke-linecap="round" stroke-linejoin="round">
+
               <path d="M20 6 9 17l-5-5"/>
+
             </svg>
+
             No registration required
+
           </li>
 
+
           <li>
+
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="3"
                  stroke-linecap="round" stroke-linejoin="round">
+
               <path d="M20 6 9 17l-5-5"/>
+
             </svg>
+
             No paywalls, no premium tiers
+
           </li>
 
         </ul>
 
       </div>
+
     </div>
+
   </div>
+
 </section>
+
 
 <!-- FAQ -->
 <section id="faq">
+
   <div class="section-inner">
 
     <div class="section-head">
-      <div class="section-label">Questions</div>
-      <h2 class="section-title">Frequently Asked</h2>
+
+      <div class="section-label">
+        Questions
+      </div>
+
+      <h2 class="section-title">
+        Frequently Asked
+      </h2>
+
       <p class="section-sub">
         Everything you want to know, answered.
       </p>
+
     </div>
+
 
     <div class="faq-wrap">
 
+
       <details class="faq-item">
-        <summary class="faq-q">Are the games really free?</summary>
+
+        <summary class="faq-q">
+          Are the games really free?
+        </summary>
+
         <div class="faq-a">
           Yes, absolutely. Every game on this site is 100% free to download
           and play. No hidden charges, no subscriptions, no premium tiers.
         </div>
+
       </details>
 
+
       <details class="faq-item">
-        <summary class="faq-q">Are the downloads safe?</summary>
+
+        <summary class="faq-q">
+          Are the downloads safe?
+        </summary>
+
         <div class="faq-a">
           Every game is tested and verified before being added here.
           We don't use sketchy file hosts or bundled software.
           Your safety is our priority.
         </div>
+
       </details>
 
+
       <details class="faq-item">
-        <summary class="faq-q">Do I need to create an account?</summary>
+
+        <summary class="faq-q">
+          Do I need to create an account?
+        </summary>
+
         <div class="faq-a">
           No. Just click download and play. We don't require registration,
           email, or any personal information.
         </div>
+
       </details>
 
+
       <details class="faq-item">
-        <summary class="faq-q">What platforms are supported?</summary>
+
+        <summary class="faq-q">
+          What platforms are supported?
+        </summary>
+
         <div class="faq-a">
           Most games are available for PC (Windows). Mobile/Android versions
           are being worked on and will be released soon.
         </div>
+
       </details>
 
+
       <details class="faq-item">
-        <summary class="faq-q">How often do you add new games?</summary>
+
+        <summary class="faq-q">
+          How often do you add new games?
+        </summary>
+
         <div class="faq-a">
           We're actively developing new games. Follow us on social media
           to stay updated on new releases and updates.
         </div>
+
       </details>
 
     </div>
+
   </div>
+
 </section>
+
 
 <!-- FOOTER -->
 <footer>
 
   <div class="footer-inner">
 
+
     <div class="footer-brand-col">
 
       <a href="#" class="logo">
-        <div class="logo-icon">🎮</div>
-        <span class="logo-text">DK.DEV.GAMES</span>
+
+        <div class="logo-icon">
+          🎮
+        </div>
+
+        <span class="logo-text">
+          DK.DEV.GAMES
+        </span>
+
       </a>
 
       <p>
@@ -1404,106 +1672,217 @@
 
     </div>
 
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="#games">All Games</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </div>
 
     <div class="footer-col">
-      <h4>Support</h4>
+
+      <h4>
+        Explore
+      </h4>
+
       <ul>
-        <li><a href="#faq">Help Center</a></li>
-        <li><a href="#faq">Contact</a></li>
-        <li><a href="#faq">Report Issue</a></li>
+
+        <li>
+          <a href="#games">
+            All Games
+          </a>
+        </li>
+
+        <li>
+          <a href="#features">
+            Features
+          </a>
+        </li>
+
+        <li>
+          <a href="#about">
+            About
+          </a>
+        </li>
+
+        <li>
+          <a href="#faq">
+            FAQ
+          </a>
+        </li>
+
       </ul>
+
     </div>
 
+
     <div class="footer-col">
-      <h4>Legal</h4>
+
+      <h4>
+        Support
+      </h4>
+
       <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Disclaimer</a></li>
+
+        <li>
+          <a href="#faq">
+            Help Center
+          </a>
+        </li>
+
+        <li>
+          <a href="#faq">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="#faq">
+            Report Issue
+          </a>
+        </li>
+
       </ul>
+
+    </div>
+
+
+    <div class="footer-col">
+
+      <h4>
+        Legal
+      </h4>
+
+      <ul>
+
+        <li>
+          <a href="#">
+            Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Terms of Use
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Disclaimer
+          </a>
+        </li>
+
+      </ul>
+
     </div>
 
   </div>
 
+
   <div class="footer-bottom">
+
     © <span id="year"></span> DK.DEV.GAMES —
     All rights reserved. Crafted with ❤️ by an indie dev.
+
   </div>
 
 </footer>
+
 
 <!-- MOBILE NAV -->
 <nav class="mobile-nav">
 
   <div class="mobile-nav-inner">
 
+
     <a href="#" class="mobile-nav-item active">
+
       <svg viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2"
            stroke-linecap="round" stroke-linejoin="round">
+
         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
         <polyline points="9 22 9 12 15 12 15 22"/>
+
       </svg>
+
       Home
+
     </a>
+
 
     <a href="#games" class="mobile-nav-item">
+
       <svg viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2"
            stroke-linecap="round" stroke-linejoin="round">
+
         <rect x="2" y="6" width="20" height="12" rx="2"/>
         <path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/>
+
       </svg>
+
       Games
+
     </a>
+
 
     <a href="#about" class="mobile-nav-item">
+
       <svg viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2"
            stroke-linecap="round" stroke-linejoin="round">
+
         <circle cx="12" cy="12" r="10"/>
         <path d="M12 16v-4M12 8h.01"/>
+
       </svg>
+
       About
+
     </a>
 
+
     <a href="#faq" class="mobile-nav-item">
+
       <svg viewBox="0 0 24 24" fill="none"
            stroke="currentColor" stroke-width="2"
            stroke-linecap="round" stroke-linejoin="round">
+
         <circle cx="12" cy="12" r="10"/>
         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>
+
       </svg>
+
       FAQ
+
     </a>
 
   </div>
+
 </nav>
+
 
 <script>
 
   document.getElementById('year').textContent =
     new Date().getFullYear();
 
+
   let allGames = [];
 
-  const grid = document.getElementById('gamesGrid');
-  const countEl = document.getElementById('gameCount');
-  const statGames = document.getElementById('statGames');
-  const searchInput = document.getElementById('searchInput');
+  const grid =
+    document.getElementById('gamesGrid');
+
+  const countEl =
+    document.getElementById('gameCount');
+
+  const statGames =
+    document.getElementById('statGames');
+
+  const searchInput =
+    document.getElementById('searchInput');
+
 
   function renderGames(list) {
 
     grid.innerHTML = '';
+
 
     if (!list || list.length === 0) {
 
@@ -1511,33 +1890,57 @@
         <div class="empty">
           <div class="empty-icon">🎮</div>
           <div>No games found</div>
-        </div>`;
+        </div>
+      `;
 
-      countEl.textContent = '0 games';
+      countEl.textContent =
+        '0 games';
 
       return;
     }
 
+
     countEl.textContent =
-      list.length + ' game' +
+      list.length +
+      ' game' +
       (list.length > 1 ? 's' : '');
+
 
     list.forEach(game => {
 
-      const card = document.createElement('div');
+      const card =
+        document.createElement('div');
 
-      card.className = 'game-card';
+      card.className =
+        'game-card';
 
-      const tagsHTML = (game.tags || [])
-        .map(t => `<span class="tag">${t}</span>`)
-        .join('');
 
-      const mirrorHTML = game.mirrorLink
-        ? `<a href="${game.mirrorLink}" target="_blank" rel="noopener" class="btn-mirror">Mirror Download</a>`
-        : '';
+      const tagsHTML =
+        (game.tags || [])
+          .map(t =>
+            `<span class="tag">${t}</span>`
+          )
+          .join('');
+
+
+      const mirrorHTML =
+        game.mirrorLink
+          ? `
+            <a
+              href="${game.mirrorLink}"
+              target="_blank"
+              rel="noopener"
+              class="btn-mirror"
+            >
+              Mirror Download
+            </a>
+          `
+          : '';
+
 
       const fallbackImg =
         `https://via.placeholder.com/600x400/161824/6366f1?text=${encodeURIComponent(game.title)}`;
+
 
       card.innerHTML = `
 
@@ -1552,10 +1955,16 @@
 
           <div class="thumb-gradient"></div>
 
-          <span class="badge-free">FREE</span>
-          <span class="badge-hot">NEW</span>
+          <span class="badge-free">
+            FREE
+          </span>
+
+          <span class="badge-hot">
+            NEW
+          </span>
 
         </div>
+
 
         <div class="game-info">
 
@@ -1563,13 +1972,16 @@
             ${game.title}
           </div>
 
+
           <div class="game-desc">
             ${game.description}
           </div>
 
+
           <div class="game-tags">
             ${tagsHTML}
           </div>
+
 
           <a
             href="${game.itchLink}"
@@ -1586,97 +1998,155 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
+
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+
               <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
+
+              <line
+                x1="12"
+                y1="15"
+                x2="12"
+                y2="3"
+              />
+
             </svg>
 
             Download Now
 
           </a>
 
+
           ${mirrorHTML}
 
         </div>
+
       `;
+
 
       grid.appendChild(card);
 
     });
+
   }
 
-  fetch('games.json?v=' + Date.now())
 
-    .then(res => res.json())
+  fetch(
+    'games.json?v=' +
+    Date.now()
+  )
 
-    .then(data => {
+  .then(res =>
+    res.json()
+  )
 
-      allGames = data.games || [];
+  .then(data => {
 
-      renderGames(allGames);
+    allGames =
+      data.games || [];
 
-      statGames.textContent =
-        allGames.length + '+';
 
-    })
-
-    .catch(err => {
-
-      console.error(err);
-
-      grid.innerHTML = `
-        <div class="empty">
-          <div class="empty-icon">⚠️</div>
-          <div>Failed to load games</div>
-        </div>`;
-
-    });
-
-  searchInput.addEventListener('input', (e) => {
-
-    const q =
-      e.target.value.toLowerCase().trim();
-
-    if (!q) {
-
-      renderGames(allGames);
-
-      return;
-    }
-
-    const filtered = allGames.filter(g =>
-
-      g.title.toLowerCase().includes(q) ||
-
-      (g.description || '')
-        .toLowerCase()
-        .includes(q) ||
-
-      (g.tags || [])
-        .some(t =>
-          t.toLowerCase().includes(q)
-        )
-
+    renderGames(
+      allGames
     );
 
-    renderGames(filtered);
+
+    statGames.textContent =
+      allGames.length + '+';
+
+  })
+
+
+  .catch(err => {
+
+    console.error(err);
+
+
+    grid.innerHTML = `
+
+      <div class="empty">
+
+        <div class="empty-icon">
+          ⚠️
+        </div>
+
+        <div>
+          Failed to load games
+        </div>
+
+      </div>
+
+    `;
 
   });
 
-  document.addEventListener('keydown', (e) => {
 
-    if (
-      (e.ctrlKey || e.metaKey) &&
-      e.key === 'k'
-    ) {
+  searchInput.addEventListener(
+    'input',
+    (e) => {
 
-      e.preventDefault();
+      const q =
+        e.target.value
+          .toLowerCase()
+          .trim();
 
-      searchInput.focus();
+
+      if (!q) {
+
+        renderGames(
+          allGames
+        );
+
+        return;
+
+      }
+
+
+      const filtered =
+        allGames.filter(g =>
+
+          g.title
+            .toLowerCase()
+            .includes(q) ||
+
+          (g.description || '')
+            .toLowerCase()
+            .includes(q) ||
+
+          (g.tags || [])
+            .some(t =>
+              t.toLowerCase()
+               .includes(q)
+            )
+
+        );
+
+
+      renderGames(
+        filtered
+      );
 
     }
+  );
 
-  });
+
+  document.addEventListener(
+    'keydown',
+    (e) => {
+
+      if (
+        (e.ctrlKey || e.metaKey) &&
+        e.key === 'k'
+      ) {
+
+        e.preventDefault();
+
+        searchInput.focus();
+
+      }
+
+    }
+  );
 
 </script>
 
