@@ -15,6 +15,14 @@
       "tags": ["Puzzle", "Casual", "Physics", "PC"],
       "itchLink": "https://box-deginer.itch.io/fruit-merge",
       "mirrorLink": ""
+    },
+    {
+      "title": "Car Goods",
+      "description": "Get behind the wheel and deliver goods across a 3D world! 🚚 A single-player driving game where you drive, transport cargo, and master the roads. Test your driving skills and complete delivery challenges.",
+      "image": "https://img.sanishtech.com/u/691cdf24e2f4afd4c99dc042f7e56d4c.jpg",
+      "tags": ["Racing", "Driving", "3D", "Simulation", "PC"],
+      "itchLink": "https://box-deginer.itch.io/cargoods",
+      "mirrorLink": ""
     }
   ]
 }
